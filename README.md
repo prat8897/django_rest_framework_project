@@ -8,4 +8,3 @@ Then using Postman, use Basic Authentication with the given username and passwor
 - /api/posts/1/
 
 Make sure to create a post using the POST method before trying to retreive any posts. After creating a post, check the email entered during creating the User.
-
