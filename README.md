@@ -1,5 +1,6 @@
 To run the application, first
 - edit 'settings.py' with your own EMAIL_HOST_USER and EMAIL_HOST_PASSWORD.
+- cd into drf_project folder
 - in the console, run "python manage.py createsuperuser"
 - follow console instructions
 - Then run "python manage.py runserver"
