@@ -77,7 +77,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'drf_project.wsgi.application'
-
+ALLOWED_HOSTS = ['prat8897.pythonanywhere.com']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
