@@ -10,15 +10,15 @@ class PostList(generics.ListCreateAPIView):
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-    def perform_create(self, serializer):
-        serializer.save(author=self.request.user)
-        send_mail(
-            'New Post Created',
-            'A new post has been created!',
-            settings.EMAIL_HOST_USER,
-            [self.request.user.email],
-            fail_silently=False,
-        )
+    #def perform_create(self, serializer):
+    #    serializer.save(author=self.request.user)
+    #    send_mail(
+    #        'New Post Created',
+    #        'A new post has been created!',
+    #        settings.EMAIL_HOST_USER,
+    #        [self.request.user.email],
+    #        fail_silently=False,
+    #    )
 
 class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
